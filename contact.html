@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="./contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <!-- <div
+          class="alert alert-success"
+          style="width: 42rem; height: 6rem"
+        ></div> -->
+
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'm <span class="home__title-color">Hao</span><br />
+            I'm a Front-End
+            <br />
+            <span>Developer</span>
+          </h1>
+          <img
+            class="my__img"
+            src="./images/aboutme.jpg"
+            style="border-radius: 30rem; width: 30%"
+          />
+        </div>
+        <div class="home__button--contact">
+          <a style="float: left" href="#contact" class="button">Contact</a>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="./images/aboutme2.jpg" alt="" />
+          </div>
+
+          <div class="about__title">
+            <h2 class="about__subtitle" style="font-size: 40px">I'm Hao</h2>
+            <p
+              class="about__text"
+            >
+              My full name is Ngo Trieu Hao. I'm a Front-End Developer. I study
+              at the University of Greenwich. I have 2 years of experience using
+              Programming Languages such as: HTML, CSS, JavaScript, JQuery and
+              Boostrap. Besides that, I'm studying React JS to improve my skill
+              higher and higher. I have also done many other projects with my
+              friend during the past time. Since then, I have had many lessons
+              that help me a lot of to known about my future career as a
+              Front-end Developer.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle" style="font-size: 30px">
+              Profesional Skills
+            </h2>
+            <p class="skills__text" style="font-size: 18px">
+              These are the skills that I have after pursuing my passion and
+              studying for 3 years.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <!-- <span class="skills__percentage">95%</span> -->
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <!-- <span class="skills__percentage">85%</span> -->
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <!-- <span class="skills__percentage">65%</span> -->
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <!-- <span class="skills__percentage">85%</span> -->
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./images/learning.png" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="wrapper">
+        <div class="contact__container bd-grid">
+          <form class="contact__form">
+            <div class="form-group" style="margin-top: 2rem">
+              <input
+                id="toName"
+                type="text"
+                class="input_contact"
+                placeholder=" "
+              />
+              <label class="form__label">Name</label>
+            </div>
+            <div class="form-group" style="margin-top: 2rem">
+              <input
+                type="email"
+                id="fromName"
+                class="input_contact"
+                placeholder=" "
+              />
+              <label class="form__label">Email</label>
+            </div>
+            <div class="form-group" style="margin-top: 2rem">
+              <textarea
+                id="msg"
+                placeholder=" "
+                class="input_message"
+                cols="0"
+                rows="10"
+              ></textarea>
+              <label class="form__label--message">Message</label>
+              <button onclick="sendEmail()" class="btn_send--contact">
+                Send
+              </button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== MAIN JS =====-->
+    <script type="text/javascript" src="contact.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("RKo3UJemrIRJ-PYmM");
+      })();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
