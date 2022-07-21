@@ -1,7 +1,9 @@
 html {
     scroll-behavior: smooth;    
 }
-
+main.l-main {
+    overflow-x: hidden;
+}
 /*===== Colores =====*/
 :root {
     --first-color: #4070f4;
@@ -847,15 +849,28 @@ img {
     position: relative;
 }
 .knowledge__left {
-    padding-right: 1rem;
+    padding-right: 0;
     position: relative;
-    width: 50%;
+    width: 80%;
     z-index: 2;
 }
 .knowledge__right {
-    animation: rotation 14s infinite linear;
+    animation: slideright2left 9s linear infinite;
     width: 25%;
 }
+.rotate {
+    animation: rotation 8s linear infinite;
+}
+
+@keyframes slideright2left {
+    0% {
+        transform: translateX(-1650px);
+    }
+    100% {
+        transform: translateX(450px);
+    }
+}
+
 .knowledge__left--content_item:first-child, .knowledge__left--title {
     transition: all .5s ease;
 }
@@ -863,7 +878,8 @@ img {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    margin-left: 15rem;
+    gap: 2rem 10rem;
     justify-content: flex-start;
     width: 100%;
 }
@@ -1044,10 +1060,6 @@ img {
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
     }
-
-   
-
-   
 }
 
 @media screen and (min-width: 1024px) {
@@ -1055,7 +1067,6 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
-
     .home__img {
         right: 10%;
     }
@@ -1068,22 +1079,24 @@ img {
     html {
         overflow-x: hidden;
     }
+    .body {
+        margin: 0 auto;
+    }
+    main.l-main {
+        overflow-x: hidden;
+    }
     :root {
         --big-font-size: 26px;
         --h2-font-size: 1.5rem;
         --normal-font-size: 1rem;
     }
-    .body {
-        margin: 0 auto;
-    }
+    
     .bd-grid {
         display: inline-block;
         height: auto;
         margin-top:1rem;
-
     }
     
-
     /*===== HOME =====*/
 
     .home__data {
@@ -1113,10 +1126,25 @@ img {
         position: absolute;
         right: 2vw;
         width: 40%;
+        animation: slideright2left 6s linear infinite;
     }
+    .rotate {
+        animation: rotation 5s linear infinite;
+    }
+
+    @keyframes slideright2left {
+        0% {
+            transform: translateX(-500px);
+        }
+        100% {
+            transform: translateX(300px);
+        }
+    }
+
     .knowledge__left--content {
         gap: 5%;
         justify-content: flex-start;
+        margin-left: 0;
     }
     .knowledge__left--content_item {
         height: 25vw;
@@ -1191,5 +1219,132 @@ img {
 }
 
 @media only screen and (min-width: 46.25rem) and (max-width:63.9375rem) {
+    html {
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+    .body {
+        margin: 0 auto;
+    }
+    main.l-main {
+        overflow-x: hidden;
+    }
+    .section-title {
+        text-align: center;
+    }
+    /*===== HOME =====*/
+    .home {
+        display: block;
+        height: 25rem;
+    }
+    .bd-grid {
+        grid-column-gap: 0;
+    }
+    .favicon--cursor {
+        margin-left: 3rem;
+    }
+    .my__img {
+        width: 40%;
+        margin-right: 2rem;
+    }
+
+    /*===== ABOUT =====*/
+    .about__container {
+        margin-left: 0;
+    }
+    .about__title {
+        position: relative;
+        right: 1rem;
+        margin-top: 2rem;
+    }
+    .about__img {
+        position: relative;
+        right: 2rem;
+    }
+
+    /*===== SKILLS =====*/
+   
+    .knowledge__left {
+        margin-top: 2rem;
+        width: 85%;
+    }
+    .knowledge__left--content {
+        justify-content: space-between;
+        margin-left: 0;
+        gap: 2rem;
+    }
+    .knowledge__right {
+        position: absolute;
+        right: 10%;
+        width: 30%;
+        z-index: 1;
+        animation: slideright2left 8s linear infinite;
+        
+    }
+
+    .rotate {
+        animation: rotation 6s linear infinite;
+    }
+
+    @keyframes slideright2left {
+        0% {
+            transform: translateX(-900px);
+        }
+        100% {
+            transform: translateX(700px);
+        }
+    }
+
+    /*===== EXPERIENCE =====*/
+    .experience {
+        padding-left: 0;
+        padding-right: 4rem;
+    }
+    .experience__left--image {
+        left: 1rem;
+        width: 35vw;
+    }
+
+    /*===== CONTACT =====*/
+    .wrapper {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+    /*===== CONTACT LEFT=====*/
+
+    .contact__container--left {
+        width: 40%;
+    }
+    .contact__left--title {
+        font-size: 20px;
+    }
+    .contact__left--titleh4 {
+        font-size: 18px;
+    }
+    .contact__left--content_item article p {
+        font-size: 14px;
+    }
     
+
+    /*===== CONTACT RIGHT=====*/
+    .contact__container--right {
+        width: 55%;
+    }
+    .contact__right--title {
+        font-size: 20px;
+    }
+    .input_contact {
+        font-size: 14px;
+        width: 22rem;
+    }
+    .input_message {
+        width: 22rem;
+    }
+    .btn_send--contact {
+        width: 8rem;
+    }
+    .section:nth-last-child(2) {
+        padding-bottom: 1rem;
+    }
 }
