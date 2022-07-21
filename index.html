@@ -16,31 +16,36 @@
     />
     <link type="text/css" rel="stylesheet" href="./index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/27d79cf26d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="l-main">
       <!--===== HOME =====-->
       <section class="home bd-grid" id="home">
-        <!-- <div
-          class="alert alert-success"
-          style="width: 42rem; height: 6rem"
-        ></div> -->
-
         <div class="home__data">
+          <div class="favicon--cursor">
+            <img src="/images/faviconpng.png" alt="favicon" />
+          </div>
+
           <h1 class="home__title">
             Hi,<br />I'm <span class="home__title-color">Hao</span><br />
             I'm a Front-End
             <br />
             <span>Developer</span>
           </h1>
-          <img
-            class="my__img"
-            src="./images/aboutme.jpg"
-            style="border-radius: 30rem; width: 30%"
-          />
+          <img class="my__img" src="./images/aboutme.jpg" />
         </div>
         <div class="home__button--contact">
-          <a style="float: left" href="#contact" class="button">Contact</a>
+          <a href="#contact" class="button--contact">Contact</a>
+          <a
+            href="./url/Ngo-Trieu-Hao-Front-End.pdf"
+            download="Ngo-Trieu-Hao-Front-End"
+            class="button--cv"
+            >Download CV</a
+          >
         </div>
       </section>
 
@@ -50,14 +55,12 @@
 
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="./images/aboutme2.jpg" alt="" />
+            <img class="img--malay" src="./images/astronaunthao.png" alt="" />
           </div>
 
           <div class="about__title">
             <h2 class="about__subtitle" style="font-size: 40px">I'm Hao</h2>
-            <p
-              class="about__text"
-            >
+            <p class="about__text">
               My full name is Ngo Trieu Hao. I'm a Front-End Developer. I study
               at the University of Greenwich. I have 2 years of experience using
               Programming Languages such as: HTML, CSS, JavaScript, JQuery and
@@ -74,103 +77,232 @@
       <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle" style="font-size: 30px">
-              Profesional Skills
-            </h2>
-            <p class="skills__text" style="font-size: 18px">
-              These are the skills that I have after pursuing my passion and
-              studying for 3 years.
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <!-- <span class="skills__percentage">95%</span> -->
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <!-- <span class="skills__percentage">85%</span> -->
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <!-- <span class="skills__percentage">65%</span> -->
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">UX/UI</span>
-              </div>
-              <div class="skills__bar skills__ux"></div>
-              <div>
-                <!-- <span class="skills__percentage">85%</span> -->
-              </div>
+        <div class="knowledge scroll-section" id="skill-nav">
+          <div class="knowledge__left">
+            <div class="knowledge__left--content">
+              <div class="knowledge__left--content_item">HTML</div>
+              <div class="knowledge__left--content_item">CSS/SCSS</div>
+              <div class="knowledge__left--content_item">Javascript</div>
+              <div class="knowledge__left--content_item">Bootstrap</div>
+              <div class="knowledge__left--content_item">UX/UI</div>
+              <div class="knowledge__left--content_item">ReacJs</div>
             </div>
           </div>
-
-          <div>
-            <img src="./images/learning.png" alt="" class="skills__img" />
+          <div class="knowledge__right">
+            <img src="./images/plane.png" alt="plance " />
           </div>
         </div>
       </section>
 
+      <!--===== EXPERIENCE =====-->
+      <section>
+        <h2 class="section-title" style="margin-top: 3rem">Experience</h2>
+
+        <div class="experience scroll-section" id="experience-nav">
+          <div class="experience__left">
+            <div class="experience__left--image">
+              <img src="./images/astronaunt2hao.png" alt="astronaunt2" />
+            </div>
+          </div>
+          <div class="experience__right">
+            <div class="experience__right--title">Experience</div>
+            <div class="experience__right--content">
+              <div class="experience__right--content_item">
+                <div class="experience__right--content_item-right">
+                  <div>
+                    <section
+                      class="experience__right--content_item-right_title"
+                    >
+                      E-commerce Website (Shoes Store)
+                    </section>
+                    <section class="experience__right--content_item-right_work">
+                      2021/06 - 2021/12
+                    </section>
+                    <ul>
+                      <li>
+                        <article>Teamsize: <span>4</span></article>
+                      </li>
+                      <li>
+                        <article>Main responsibilities:</article>
+                        <p>- Plan ideas and sketch out diagram</p>
+                        <p>
+                          - Write website code with programming - languages such
+                          as: HTML, CSS and Javascript
+                        </p>
+                        <p>- Fix any website issues or bugs that arise</p>
+                        <p>
+                          - Turn UI/UX designs into prototypes, create excellent
+                          interactions from designs
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="experience__right--content_item">
+                <div class="experience__right--content_item-right">
+                  <div>
+                    <section
+                      class="experience__right--content_item-right_title"
+                    >
+                      Student Management Website
+                    </section>
+                    <section class="experience__right--content_item-right_work">
+                      2021/01 - 2021/04
+                    </section>
+                    <ul>
+                      <li>
+                        <article>Teamsize: <span>6</span></article>
+                      </li>
+                      <li>
+                        <article>Main responsibilities:</article>
+                        <p>
+                          - Write website code with programming - languages such
+                          as HTML, CSS and Javascript
+                        </p>
+                        <p>
+                          - Turn UI/UX designs into prototypes, create excellent
+                          interactions from designs
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="wrapper">
-        <div class="contact__container bd-grid">
-          <form class="contact__form">
-            <div class="form-group" style="margin-top: 2rem">
-              <input
-                id="toName"
-                type="text"
-                class="input_contact"
-                placeholder=" "
-              />
-              <label class="form__label">Name</label>
+        <h2 class="section-title" style="margin-top: 3rem">Contact Me</h2>
+        <div class="wrapper" style="display: flex">
+          <!--===== CONTACT LEFT=====-->
+          <div class="contact__container--left">
+            <div class="contact__left--title">Social Network</div>
+            <div class="contact__left--content">
+              <div class="contact__left--content_item">
+                <h4 class="contact__left--titleh4">
+                  <i class="fa-solid fa-envelope"></i>Email:
+                </h4>
+                <article>
+                  <p>ngotrieuhao2000@gmail.com</p>
+                </article>
+              </div>
+              <div class="contact__left--content_item">
+                <h4 class="contact__left--titleh4">
+                  <i class="fa-brands fa-facebook-messenger"></i>Messenger:
+                </h4>
+                <article>
+                  <p style="margin-bottom: 10px">Ngô Hảo</p>
+                  <a
+                    href="https://m.me/ngotrieuhao"
+                    class="contact__left--linkmess"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Send an message
+                  </a>
+                </article>
+              </div>
+              <div class="contact__left--content_item">
+                <h4 class="contact__left--titleh4">
+                  <i class="fa-solid fa-phone"></i>Phone:
+                </h4>
+                <article>
+                  <p>+(084) 944334052</p>
+                </article>
+              </div>
+              <div class="contact__left--content_item">
+                <h4 class="contact__left--titleh4">
+                  <i class="fa-brands fa-linkedin"></i>Linkedin:
+                </h4>
+                <article>
+                  <p style="margin-bottom: 10px">Hảo Ngô</p>
+                  <a
+                    href="https://www.linkedin.com/in/h%E1%BA%A3o-ng%C3%B4-795998184/"
+                    class="contact__left--linkmess"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Open link
+                  </a>
+                </article>
+              </div>
             </div>
-            <div class="form-group" style="margin-top: 2rem">
-              <input
-                type="email"
-                id="fromName"
-                class="input_contact"
-                placeholder=" "
-              />
-              <label class="form__label">Email</label>
-            </div>
-            <div class="form-group" style="margin-top: 2rem">
-              <textarea
-                id="msg"
-                placeholder=" "
-                class="input_message"
-                cols="0"
-                rows="10"
-              ></textarea>
-              <label class="form__label--message">Message</label>
-              <button onclick="sendEmail()" class="btn_send--contact">
-                Send
-              </button>
+          </div>
+
+          <!--===== CONTACT RIGHT=====-->
+          <div class="contact__container--right">
+            <div class="contact__right--title">Let's talk</div>
+            <form class="contact__form">
+              <div class="form-group" style="margin-top: 2rem">
+                <input
+                  id="toName"
+                  name="toName"
+                  type="text"
+                  class="input_contact"
+                  placeholder=" "
+                  required
+                />
+                <label class="form__label">Name</label>
+              </div>
+              <div class="form-group" style="margin-top: 2rem">
+                <input
+                  type="email"
+                  id="fromName"
+                  name="fromName"
+                  class="input_contact"
+                  placeholder=" "
+                  required
+                />
+                <label class="form__label">Email</label>
+              </div>
+              <div class="form-group" style="margin-top: 2rem">
+                <textarea
+                  id="msg"
+                  name="msg"
+                  placeholder=" "
+                  class="input_message"
+                  cols="0"
+                  rows="10"
+                  required
+                ></textarea>
+                <label class="form__label--message">Message</label>
+                <div class="button-submit">
+                  <button onclick="sendEmail()" class="btn_send--contact">
+                    Send
+                  </button>
                 </div>
-            </div>
-          </form>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--===== THANKS =====-->
+      <section>
+        <div class="copy-right">
+          <div class="copy-right_title">Thanks for watching</div>
+          <section>
+            © 2022
+            <span>
+              <svg
+                class="svg-inline--fa fa-heart fa-w-16"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="heart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                ></path>
+              </svg> </span
+            >coded by Ngo Hao
+          </section>
         </div>
       </section>
     </main>

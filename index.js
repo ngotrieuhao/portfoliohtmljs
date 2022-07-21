@@ -10,13 +10,15 @@ function sendEmail(params) {
     .then(function (res) {
       console.log("success", res.status);
       alert("Sent Message Successfully");
+      document.getElementById("toName").value = "";
+      document.getElementById("fromName").value = "";
+      document.getElementById("msg").value = "";
     })
     .catch(function (err) {
       console.log("error", err);
       alert("Failed");
     });
 }
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",
@@ -28,6 +30,7 @@ sr.reveal(".section-title", { delay: 400 });
 sr.reveal(".wrapper", { delay: 400 });
 
 /*SCROLL HOME*/
+sr.reveal(".favicon--cursor", {});
 sr.reveal(".home__title", {});
 sr.reveal(".button", { delay: 200 });
 sr.reveal(".home__button--contact", { delay: 400 });
@@ -45,8 +48,8 @@ sr.reveal(".about__text", { delay: 400 });
 /*SCROLL SKILLS*/
 
 sr.reveal(".skills__subtitle", {});
-sr.reveal(".skills__text", {});
-sr.reveal(".skills__data", { interval: 200 });
+sr.reveal(".knowledge__left", {});
+sr.reveal(".knowledge__right", { interval: 200 });
 sr.reveal(".skills__img", { delay: 600 });
 
 /*SCROLL CONTACT*/
@@ -55,3 +58,6 @@ sr.reveal(".contact_name", { interval: 200 });
 sr.reveal(".contact_email", { interval: 200 });
 sr.reveal(".contact_message", { interval: 200 });
 sr.reveal(".contact__container", { interval: 200 });
+
+/*SCROLL THANKS*/
+sr.reveal(".copy-right", { interval: 200 });
