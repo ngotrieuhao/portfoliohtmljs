@@ -1220,6 +1220,11 @@ img {
         font-size:12px;
         width: 100%;
     }
+    .form-group.invalid label {
+        top: 40%;
+        transform: translateY(-20px);
+    }
+
     .btn_send--contact {
         width: 120px;
         font-size: 14px;
