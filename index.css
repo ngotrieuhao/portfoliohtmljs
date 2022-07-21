@@ -236,7 +236,7 @@ img {
     position: relative;
 }
 
-.form__label {
+.form__label--name {
     color: #999;
     position: absolute;
     top: 50%;
@@ -247,6 +247,16 @@ img {
     transition: 0.25s ease;
 }
 
+.form__label--email {
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
 .input_contact {
     border: 1px solid #eee;
     border-radius: 10px;
@@ -262,8 +272,10 @@ img {
         border-color: #6a5af9;
         outline:#4070f4;
     }
-    .input_contact:not(:placeholder-shown) + .form__label,
-    .input_contact:focus + .form__label {
+    .input_contact:not(:placeholder-shown) + .form__label--email,
+    .input_contact:focus + .form__label--email,
+    .input_contact:not(:placeholder-shown) + .form__label--name,
+    .input_contact:focus + .form__label--name {
         padding: 10px;
         display: inline-block;
         left: 10px;
@@ -1213,16 +1225,25 @@ img {
         font-size: 12px;
         width: 100%;     
     }
-    .form__label, .form__label--message {
+    .form__label--name,.form__label--email, .form__label--message {
         font-size: 14px;
     }
     .input_message {
         font-size:12px;
         width: 100%;
     }
-    .form-group.invalid label {
-        top: 40%;
+    
+    .form-group.invalid label.form__label--message {
         transform: translateY(-20px);
+    }
+    .form-group.invalid label {
+        transform: translateY(0);
+    }
+    .form-group.invalid .form__label--name, .form-group.invalid .form__label--email {
+        transform: translateY(-20px) !important;
+    }
+    .form__label--name, .form__label--email {
+        top: 40%;
     }
 
     .btn_send--contact {
