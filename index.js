@@ -1,24 +1,24 @@
-function sendEmail(params) {
-  var tempParams = {
-    from_name: document.getElementById("toName").value,
-    to_name: document.getElementById("fromName").value,
-    message: document.getElementById("msg").value,
-  };
+// function sendEmail(params) {
+//   var tempParams = {
+//     from_name: document.getElementById("toName").value,
+//     to_name: document.getElementById("fromName").value,
+//     message: document.getElementById("msg").value,
+//   };
 
-  emailjs
-    .send("service_6yy46g6", "template_z5qz4ie", tempParams)
-    .then(function (res) {
-      console.log("success", res.status);
-      alert("Sent Message Successfully");
-      document.getElementById("toName").value = "";
-      document.getElementById("fromName").value = "";
-      document.getElementById("msg").value = "";
-    })
-    .catch(function (err) {
-      console.log("error", err);
-      alert("Failed");
-    });
-}
+//   emailjs
+//     .send("service_6yy46g6", "template_z5qz4ie", tempParams)
+//     .then(function (res) {
+//       console.log("success", res.status);
+//       alert("Sent Message Successfully");
+//       document.getElementById("toName").value = "";
+//       document.getElementById("fromName").value = "";
+//       document.getElementById("msg").value = "";
+//     })
+//     .catch(function (err) {
+//       console.log("error", err);
+//       alert("Failed");
+//     });
+// }
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: "top",

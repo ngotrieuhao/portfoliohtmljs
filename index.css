@@ -308,6 +308,27 @@ img {
         color: #6a5af9
     }
 
+.form-group.invalid .input_contact {
+    border-color: #f33a58;
+}
+.form-group.invalid .input_message {
+    border-color: #f33a58;
+}
+.form-group.invalid label {
+    transform: translateY(-23px);
+}
+      
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+      
+.form-message {
+    margin-top: 1rem;
+}
+.wrappermess {
+    margin-top: 10px;
+}
+
 /* .btn_send--contact {
     color: #fff;
     background-color: var(--first-color);

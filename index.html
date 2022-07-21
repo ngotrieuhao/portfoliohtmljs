@@ -232,7 +232,7 @@
           <!--===== CONTACT RIGHT=====-->
           <div class="contact__container--right">
             <div class="contact__right--title">Let's talk</div>
-            <form class="contact__form">
+            <form class="contact__form" id="form-1">
               <div class="form-group" style="margin-top: 2rem">
                 <input
                   id="toName"
@@ -243,6 +243,9 @@
                   required
                 />
                 <label class="form__label">Name</label>
+                <div class="wrappermess">
+                  <span class="form-message"></span>
+                </div>
               </div>
               <div class="form-group" style="margin-top: 2rem">
                 <input
@@ -254,6 +257,9 @@
                   required
                 />
                 <label class="form__label">Email</label>
+                <div class="wrappermess">
+                  <span class="form-message"></span>
+                </div>
               </div>
               <div class="form-group" style="margin-top: 2rem">
                 <textarea
@@ -266,6 +272,9 @@
                   required
                 ></textarea>
                 <label class="form__label--message">Message</label>
+                <div class="wrappermess">
+                  <span class="form-message"></span>
+                </div>
                 <div class="button-submit">
                   <button onclick="sendEmail()" class="btn_send--contact">
                     Send
@@ -347,6 +356,41 @@
             );
           } // End if
         });
+      });
+    </script>
+    <script type="text/javascript" src="./validator.js"></script>
+    <script>
+      // Mong muốn của chúng ta khi sử dụng
+      Validator({
+        form: "#form-1",
+        formGroupSelector: ".form-group",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired("#toName"),
+          Validator.isEmail("#fromName"),
+          Validator.isRequired("#msg"),
+        ],
+        onSubmit: function sendEmail(params) {
+          var tempParams = {
+            from_name: document.getElementById("toName").value,
+            to_name: document.getElementById("fromName").value,
+            message: document.getElementById("msg").value,
+          };
+
+          emailjs
+            .send("service_6yy46g6", "template_z5qz4ie", tempParams)
+            .then(function (res) {
+              console.log("success", res.status);
+              alert("Sent Message Successfully");
+              document.getElementById("toName").value = "";
+              document.getElementById("fromName").value = "";
+              document.getElementById("msg").value = "";
+            })
+            .catch(function (err) {
+              console.log("error", err);
+              alert("Failed");
+            });
+        },
       });
     </script>
   </body>
