@@ -1338,17 +1338,29 @@ img.modal--qrcode {
   }
   .link-view span {
     margin-left: 3rem;
-    font-size: 13px;
+    font-size: 15px;
   }
   .button-view {
     width: 20%;
   }
 
   .modal-container.js-modal-container {
-    width: 60%;
+    width: 70%;
   }
   .modal.open {
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
+  }
+  .description--title {
+    font-size: 22px;
+  }
+  .wrapp--title {
+    font-size: 16px;
+  }
+  .wrapp-technology {
+    font-size: 14px;
+  }
+  .wrapp-function {
+    font-size: 14px;
   }
   /* ===== CONTACT =====*/
 
