@@ -1334,9 +1334,7 @@ img.modal--qrcode {
   }
   .link-view {
     right: 0;
-  }
-  .svg-view {
-    transform: scale(0.7);
+    transform: scale(0.8);
   }
   .link-view span {
     margin-left: 3rem;
