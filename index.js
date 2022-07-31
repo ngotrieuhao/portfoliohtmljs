@@ -52,6 +52,9 @@ sr.reveal(".knowledge__left", {});
 sr.reveal(".knowledge__right", { interval: 200 });
 sr.reveal(".skills__img", { delay: 600 });
 
+/*SCROLL ABOUT*/
+sr.reveal(".section__project", { delay: 400 });
+
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
 sr.reveal(".contact_name", { interval: 200 });
