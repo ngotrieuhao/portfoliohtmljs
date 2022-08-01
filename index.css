@@ -585,6 +585,14 @@ img {
   left: 4rem;
   animation: rotation 10s infinite linear;
 }
+.favicon2--cursor {
+  cursor: pointer;
+  position: absolute;
+  width: 8%;
+  left: 4rem;
+  top: 14rem;
+  animation: rotation 10s infinite linear;
+}
 .my__img {
   border-radius: 30rem;
   width: 30%;
@@ -690,7 +698,9 @@ img {
   font-size: 18px;
   text-align: justify;
 }
+
 /* ===== SKILLS =====*/
+
 .skills__container {
   text-align: center;
 }
@@ -1262,6 +1272,11 @@ img.modal--qrcode {
     top: 1rem;
     left: 1rem;
   }
+  .favicon2--cursor {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+  }
   .my__img {
     width: 40%;
     bottom: 1rem;
@@ -1456,6 +1471,10 @@ img.modal--qrcode {
   .favicon--cursor {
     margin-left: 3rem;
   }
+  .favicon2--cursor {
+    margin-left: 3rem;
+  }
+
   .my__img {
     width: 40%;
     margin-right: 2rem;

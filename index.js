@@ -31,6 +31,7 @@ sr.reveal(".wrapper", { delay: 400 });
 
 /*SCROLL HOME*/
 sr.reveal(".favicon--cursor", {});
+sr.reveal(".favicon2--cursor", {});
 sr.reveal(".home__title", {});
 sr.reveal(".button", { delay: 200 });
 sr.reveal(".home__button--contact", { delay: 400 });
