@@ -1414,6 +1414,9 @@ img.modal--qrcode {
   .wrapp-function {
     font-size: 14px;
   }
+  .wrapp-project__demo--items {
+    display: block;
+  }
   /* ===== CONTACT =====*/
 
   .wrapper {
