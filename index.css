@@ -1008,21 +1008,43 @@ img {
   border-color: #fff;
   cursor: grab;
 }
-
-.project__demo {
+/* ---- PROJECTS ---- */
+.wrapp-project__demo--items {
+  display: flex;
+}
+.project__demo--item {
   border-radius: 20px;
   box-shadow: 0 0 20px 4px hsl(0deg 0% 51% / 50%);
-  width: 50%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
-.project__demo--item {
+
+.project__demo--item2 {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 4px hsl(0deg 0% 51% / 50%);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project__demo--image {
   padding-top: 20px;
+}
+.project__demo--image2 {
+  padding-top: 20px;
+  height: 210px;
 }
 .demo--item-img {
   margin-left: auto;
   margin-right: auto;
   width: 94%;
+  border-radius: 20px;
+}
+.demo--item-img2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  height: 100%;
   border-radius: 20px;
 }
 .project__demo--content--description {
@@ -1070,7 +1092,7 @@ img {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.045em;
-  right: 12rem;
+  right: 7rem;
 }
 
 .link-view svg {
@@ -1106,7 +1128,18 @@ img {
   align-items: center;
   display: none;
 }
+.modal2 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 .modal.open {
+  display: flex;
+}
+.modal2.open {
   display: flex;
 }
 img.modal--qrcode {
@@ -1272,11 +1305,6 @@ img.modal--qrcode {
     top: 1rem;
     left: 1rem;
   }
-  .favicon2--cursor {
-    position: absolute;
-    top: 1rem;
-    left: 4rem;
-  }
   .my__img {
     width: 40%;
     bottom: 1rem;
@@ -1344,7 +1372,10 @@ img.modal--qrcode {
 
   /* ===== PROJECTS =====*/
 
-  .project__demo {
+  .project__demo--item {
+    width: 90%;
+  }
+  .project__demo--item2 {
     width: 90%;
   }
   .link-view {
@@ -1362,7 +1393,13 @@ img.modal--qrcode {
   .modal-container.js-modal-container {
     width: 70%;
   }
+  .modal2-container.js-modal2-container {
+    width: 70%;
+  }
   .modal.open {
+    margin-bottom: 8rem;
+  }
+  .modal2.open {
     margin-bottom: 8rem;
   }
   .description--title {
@@ -1469,9 +1506,6 @@ img.modal--qrcode {
     grid-column-gap: 0;
   }
   .favicon--cursor {
-    margin-left: 3rem;
-  }
-  .favicon2--cursor {
     margin-left: 3rem;
   }
 
