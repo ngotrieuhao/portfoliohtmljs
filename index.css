@@ -1573,6 +1573,32 @@ img.modal--qrcode {
     width: 35vw;
   }
 
+  /*===== PROJECTS =====*/
+  .link-view {
+    right: 0;
+    width: 180px;
+    font-size: 14px;
+    padding-left: 1rem;
+  }
+  .project__demo--image {
+    height: 210px;
+  }
+  .demo--item-img {
+    height: 100%;
+  }
+  .link-view rect {
+    width: 180px;
+  }
+  .link-view svg {
+    width: 190px;
+  }
+  .link-view:hover svg rect {
+    stroke-dasharray: 112, 543;
+  }
+  .button-view {
+    width: 20%;
+    transform: translateY(3px);
+  }
   /*===== CONTACT =====*/
   .wrapper {
     padding-left: 2rem;
