@@ -1011,6 +1011,7 @@ img {
 /* ---- PROJECTS ---- */
 .wrapp-project__demo--items {
   display: flex;
+  flex-wrap: wrap;
 }
 .project__demo--item {
   border-radius: 20px;
@@ -1027,6 +1028,14 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.project__demo--item3 {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 4px hsl(0deg 0% 51% / 50%);
+  width: 40%;
+  margin: 4rem auto 0 auto;
+}
+
 .project__demo--image {
   padding-top: 20px;
 }
@@ -1034,6 +1043,11 @@ img {
   padding-top: 20px;
   height: 210px;
 }
+.project__demo--image3 {
+  padding-top: 20px;
+  height: 210px;
+}
+
 .demo--item-img {
   margin-left: auto;
   margin-right: auto;
@@ -1041,6 +1055,13 @@ img {
   border-radius: 20px;
 }
 .demo--item-img2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  height: 100%;
+  border-radius: 20px;
+}
+.demo--item-img3 {
   margin-left: auto;
   margin-right: auto;
   width: 94%;
@@ -1136,10 +1157,21 @@ img {
   align-items: center;
   display: none;
 }
+.modal3 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 .modal.open {
   display: flex;
 }
 .modal2.open {
+  display: flex;
+}
+.modal3.open {
   display: flex;
 }
 img.modal--qrcode {
@@ -1378,6 +1410,9 @@ img.modal--qrcode {
   .project__demo--item2 {
     width: 90%;
   }
+  .project__demo--item3 {
+    width: 90%;
+  }
   .link-view {
     right: 0;
     transform: scale(0.8);
@@ -1396,10 +1431,16 @@ img.modal--qrcode {
   .modal2-container.js-modal2-container {
     width: 70%;
   }
+  .modal3-container.js-modal3-container {
+    width: 70%;
+  }
   .modal.open {
     margin-bottom: 8rem;
   }
   .modal2.open {
+    margin-bottom: 8rem;
+  }
+  .modal3.open {
     margin-bottom: 8rem;
   }
   .description--title {
