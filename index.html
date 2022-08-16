@@ -205,7 +205,7 @@
                   />
                 </button>
                 <a
-                  href="https://ngotrieuhao.github.io/HaoHaoStore/?fbclid=IwAR2X_knFybm1NKg1BVKALt9x1sm40twfOrjS6ta6ZYq26gb_eAxislv77WI"
+                  href="https://ngotrieuhao.github.io/HaoHaoStore/"
                   class="link-view"
                 >
                   <svg class="svg-view" width="277" height="62">
@@ -233,9 +233,9 @@
           </div>
 
           <!-- Project 2-->
-          <div class="project__demo--item2">
-            <div class="project__demo--image2">
-              <img class="demo--item-img2" src="./images/haocinema.png" />
+          <div class="project__demo--item">
+            <div class="project__demo--image">
+              <img class="demo--item-img" src="./images/haocinema.png" />
             </div>
             <div class="project__demo--content">
               <div class="project__demo--content--title"></div>
@@ -258,7 +258,7 @@
                   />
                 </button>
                 <a
-                  href="https://ngotrieuhao.github.io/HaoHaoCinema/?fbclid=IwAR23aDEzbkkvSNK20wrnolnqzmXZK8XoiebwBxQCML9xDoc7c9YOi6hIpaM"
+                  href="https://ngotrieuhao.github.io/HaoHaoCinema/"
                   class="link-view"
                 >
                   <svg class="svg-view" width="277" height="62">
@@ -286,9 +286,9 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="project__demo--item3">
-            <div class="project__demo--image3">
-              <img class="demo--item-img3" src="./images/haoweather.png" />
+          <div class="project__demo--item">
+            <div class="project__demo--image">
+              <img class="demo--item-img" src="./images/haoweather.png" />
             </div>
             <div class="project__demo--content">
               <div class="project__demo--content--title"></div>
@@ -312,6 +312,59 @@
                 </button>
                 <a
                   href="https://ngotrieuhao.github.io/HaoWeather/"
+                  class="link-view"
+                >
+                  <svg class="svg-view" width="277" height="62">
+                    <defs>
+                      <linearGradient id="grad1">
+                        <stop offset="0%" stop-color="#FF8282" />
+                        <stop offset="100%" stop-color="#E178ED" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      x="5"
+                      y="5"
+                      rx="25"
+                      fill="none"
+                      stroke="url(#grad1)"
+                      width="266"
+                      height="50"
+                    ></rect>
+                  </svg>
+                  <!--<span>Voir mes réalisations</span>-->
+                  <span>Live Demo</span></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project__demo--item">
+            <div class="project__demo--image">
+              <img class="demo--item-img" src="./images/eyesrolling.png" />
+            </div>
+            <div class="project__demo--content">
+              <div class="project__demo--content--title"></div>
+              <div class="project__demo--content--description">
+                <h3 class="description--title">Eyes Rolling</h3>
+                <div class="wrapp-technology">
+                  <span class="wrapp--title">- Technologies: </span>
+                  HTML, CSS, JavaScript,...
+                </div>
+                <div class="wrapp-function">
+                  <span class="wrapp--title">- Function: </span>
+                  Responsive, Mousemove
+                </div>
+              </div>
+              <div class="project__demo--content--view">
+                <button class="button-view">
+                  <img
+                    class="img-qrcode js-qrcode4"
+                    src="./images/qrcodeeyes.png"
+                  />
+                </button>
+                <a
+                  href="https://ngotrieuhao.github.io/EyesRolling/"
                   class="link-view"
                 >
                   <svg class="svg-view" width="277" height="62">
@@ -501,9 +554,8 @@
         </div>
       </div>
       <!------ MODAL 2 ------>
-
-      <div class="modal2 js-modal2">
-        <div class="modal2-container js-modal2-container">
+      <div class="modal js-modal2">
+        <div class="modal-container js-modal-container">
           <img
             class="modal--qrcode"
             src="./images/qrcodecinema.png"
@@ -511,14 +563,25 @@
           />
         </div>
       </div>
-      <!------ MODAL 3 ------>
 
-      <div class="modal3 js-modal3">
-        <div class="modal3-container js-modal3-container">
+      <!------ MODAL 3 ------>
+      <div class="modal js-modal3">
+        <div class="modal-container js-modal-container">
           <img
             class="modal--qrcode"
             src="./images/qrcodeweather.png"
             alt="QR-code Weather"
+          />
+        </div>
+      </div>
+
+      <!------ MODAL 4 ------>
+      <div class="modal js-modal4">
+        <div class="modal-container js-modal-container">
+          <img
+            class="modal--qrcode"
+            src="./images/qrcodeeyes.png"
+            alt="QR-code Eyes Rolling"
           />
         </div>
       </div>
@@ -660,6 +723,26 @@
 
       modal3.addEventListener("click", closeQrcode3);
       modalContainer3.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+    </script>
+    <script>
+      /* ----------------------------------------- */
+      const openqrcode4 = document.querySelector(".js-qrcode4");
+      const modal4 = document.querySelector(".js-modal4");
+      const modalContainer4 = document.querySelector(".js-modal4-container");
+      openqrcode4.addEventListener("click", showQrcode4);
+
+      function showQrcode4() {
+        modal4.classList.add("open");
+      }
+
+      function closeQrcode4() {
+        modal4.classList.remove("open");
+      }
+
+      modal4.addEventListener("click", closeQrcode4);
+      modalContainer4.addEventListener("click", function (e) {
         e.stopPropagation();
       });
     </script>
