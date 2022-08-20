@@ -1021,7 +1021,8 @@ img {
   margin-right: auto;
 }
 .project__demo--item:nth-child(3),
-.project__demo--item:nth-child(4) {
+.project__demo--item:nth-child(4),
+.project__demo--item:nth-child(5) {
   margin-top: 4rem;
 }
 

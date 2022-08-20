@@ -390,6 +390,59 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 5 -->
+          <div class="project__demo--item">
+            <div class="project__demo--image">
+              <img class="demo--item-img" src="./images/smokeandparallax.png" />
+            </div>
+            <div class="project__demo--content">
+              <div class="project__demo--content--title"></div>
+              <div class="project__demo--content--description">
+                <h3 class="description--title">Smoke & Parallax</h3>
+                <div class="wrapp-technology">
+                  <span class="wrapp--title">- Technologies: </span>
+                  HTML, CSS, JavaScript,...
+                </div>
+                <div class="wrapp-function">
+                  <span class="wrapp--title">- Function: </span>
+                  Responsive, Parallax, Smoke Text,...
+                </div>
+              </div>
+              <div class="project__demo--content--view">
+                <button class="button-view">
+                  <img
+                    class="img-qrcode js-qrcode5"
+                    src="./images/qrcodesmoke.png"
+                  />
+                </button>
+                <a
+                  href="https://ngotrieuhao.github.io/webEffect/"
+                  class="link-view"
+                >
+                  <svg class="svg-view" width="277" height="62">
+                    <defs>
+                      <linearGradient id="grad1">
+                        <stop offset="0%" stop-color="#FF8282" />
+                        <stop offset="100%" stop-color="#E178ED" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      x="5"
+                      y="5"
+                      rx="25"
+                      fill="none"
+                      stroke="url(#grad1)"
+                      width="266"
+                      height="50"
+                    ></rect>
+                  </svg>
+                  <!--<span>Voir mes réalisations</span>-->
+                  <span>Live Demo</span></a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!--===== CONTACT =====-->
@@ -585,6 +638,16 @@
           />
         </div>
       </div>
+      <!------ MODAL 5 ------>
+      <div class="modal js-modal5">
+        <div class="modal-container js-modal-container">
+          <img
+            class="modal--qrcode"
+            src="./images/qrcodesmoke.png"
+            alt="QR-code Eyes Rolling"
+          />
+        </div>
+      </div>
     </main>
 
     <!--===== SCROLL REVEAL =====-->
@@ -743,6 +806,26 @@
 
       modal4.addEventListener("click", closeQrcode4);
       modalContainer4.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+    </script>
+    <script>
+      /* ----------------------------------------- */
+      const openqrcode5 = document.querySelector(".js-qrcode5");
+      const modal5 = document.querySelector(".js-modal5");
+      const modalContainer5 = document.querySelector(".js-modal5-container");
+      openqrcode5.addEventListener("click", showQrcode5);
+
+      function showQrcode5() {
+        modal5.classList.add("open");
+      }
+
+      function closeQrcode5() {
+        modal5.classList.remove("open");
+      }
+
+      modal5.addEventListener("click", closeQrcode5);
+      modalContainer5.addEventListener("click", function (e) {
         e.stopPropagation();
       });
     </script>
