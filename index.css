@@ -1016,7 +1016,7 @@ img {
 .project__demo--item {
   border-radius: 20px;
   box-shadow: 0 0 20px 4px hsl(0deg 0% 51% / 50%);
-  width: 40%;
+  width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1580,6 +1580,9 @@ img.modal--qrcode {
   .button-view {
     width: 20%;
     transform: translateY(3px);
+  }
+  .wrapp-project__demo--items {
+    margin-inline: 20px;
   }
   /*===== CONTACT =====*/
   .wrapper {
