@@ -1016,14 +1016,15 @@ img {
 .project__demo--item {
   border-radius: 20px;
   box-shadow: 0 0 20px 4px hsl(0deg 0% 51% / 50%);
-  width: 45%;
+  width: 47%;
   margin-left: auto;
   margin-right: auto;
 }
 .project__demo--item:nth-child(3),
 .project__demo--item:nth-child(4),
-.project__demo--item:nth-child(5) {
-  margin-top: 4rem;
+.project__demo--item:nth-child(5),
+.project__demo--item:nth-child(6) {
+  margin-top: 3rem;
 }
 
 .project__demo--image {
